@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Ronal Angel Saciga Huayallani</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #3b82f6;
+            --text: #1f2937;
+            --bg: #f3f4f6;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            color: var(--text);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg);
+        }
+        .cv-container {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 2.2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+        .contact-info {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 0.9em;
+            flex-wrap: wrap;
+        }
+        section { margin-bottom: 25px; }
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 10px;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            background: #eff6ff;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .project-item { margin-bottom: 15px; }
+        .project-title { font-weight: bold; color: var(--primary); }
+        .tech-tag {
+            display: inline-block;
+            background: #dbeafe;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 2px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        ul { padding-left: 18px; margin: 5px 0; }
+        .edu-item { display: flex; justify-content: space-between; font-weight: bold; }
+        @media print {
+            body { background: none; padding: 0; }
+            .cv-container { box-shadow: none; border: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <header>
+        <h1>Ronal Angel Saciga Huayallani</h1>
+        <div class="subtitle">Ingeniero en Sistemas Computacionales</div>
+        <div class="contact-info">
+            <span>📧 saciga2016@gmail.com</span>
+            <span>📱 988231507</span>
+            <span>📍 Perú</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Educación</h2>
+        <div class="edu-item">
+            <span>Universidad Privada del Norte</span>
+            <span>2020 - Actualidad</span>
+        </div>
+        <div>Grado en Ingeniería en Sistemas Computacionales</div>
+    </section>
+
+    <section>
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills-grid">
+            <div>
+                <strong>Lenguajes y Web:</strong>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript, PHP <span style="font-weight:normal">(Intermedio)</span></li>
+                    <li>Java, Python, C# <span style="font-weight:normal">(Intermedio)</span></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Datos y Entornos:</strong>
+                <ul>
+                    <li>SQL, NoSQL (MongoDB) <span style="font-weight:normal">(Básico-Intermedio)</span></li>
+                    <li>Anaconda, Arduino IDE, Git, VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Proyectos Destacados</h2>
+        
+        <div class="project-item">
+            <div class="project-title">Simulador 3D: Examen de Conducción Virtual (Anaconda)</div>
+            <p>Desarrollo de un sistema interactivo que simula un examen real con lógica de puntaje y evaluación de reglas de tránsito.</p>
+            <span class="tech-tag">Python</span> <span class="tech-tag">Anaconda</span> <span class="tech-tag">Simulación 3D</span>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Machine Learning: Detección de Neumonía COVID-19</div>
+            <p>Implementación de modelos de visión computacional para el diagnóstico automático mediante placas de rayos X.</p>
+            <span class="tech-tag">Deep Learning</span> <span class="tech-tag">Python</span> <span class="tech-tag">Salud Digital</span>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">App Móvil: Gestión de Prácticas Profesionales</div>
+            <p>Sistema con geolocalización y validación fotográfica para el registro de asistencia y cumplimiento de horas.</p>
+            <span class="tech-tag">Java/Android</span> <span class="tech-tag">PHP</span> <span class="tech-tag">Geofencing</span>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Big Data: Análisis de Ventas Minimarket</div>
+            <p>Evaluación de tendencias de consumo y optimización de stock mediante el procesamiento de grandes volúmenes de datos.</p>
+            <span class="tech-tag">SQL</span> <span class="tech-tag">NoSQL</span> <span class="tech-tag">Data Analytics</span>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Sistemas IoT Arduino</div>
+            <p>Implementación de un sistema de seguridad perimetral y un dispensador inteligente de medicinas para adultos mayores.</p>
+            <span class="tech-tag">C++</span> <span class="tech-tag">Arduino</span> <span class="tech-tag">Electrónica</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills Profesionales</h2>
+        <div class="skills-grid">
+            <ul>
+                <li><strong>Simulación de Procesos:</strong> Capacidad para modelar reglas complejas en entornos digitales.</li>
+                <li><strong>Visión Computacional:</strong> Aplicación de IA en análisis de imágenes médicas.</li>
+            </ul>
+            <ul>
+                <li><strong>Enfoque en Soluciones Sociales:</strong> Experiencia en tecnología aplicada a salud y bienestar.</li>
+                <li><strong>Análisis de Datos:</strong> Capacidad analítica para la toma de decisiones basada en Big Data.</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
+
